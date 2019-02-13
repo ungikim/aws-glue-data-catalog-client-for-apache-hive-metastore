@@ -185,7 +185,7 @@ public class GlueMetastoreClientDelegate {
   private final AwsGlueHiveShims hiveShims = ShimsLoader.getHiveShims();
   private final String catalogId;
   private final int numPartitionSegments;
-  
+
   public static final String CATALOG_ID_CONF = "hive.metastore.glue.catalogid";
   public static final String NUM_PARTITION_SEGMENTS_CONF = "aws.glue.partition.num.segments";
 
@@ -903,7 +903,7 @@ public class GlueMetastoreClientDelegate {
     checkArgument(StringUtils.isNotEmpty(dbName), "dbName cannot be null or empty");
     checkArgument(StringUtils.isNotEmpty(tblName), "tblName cannot be null or empty");
     checkNotNull(values, "values cannot be null");
-   
+
     GetPartitionRequest request = new GetPartitionRequest()
         .withDatabaseName(dbName)
         .withTableName(tblName)
@@ -1018,7 +1018,6 @@ public class GlueMetastoreClientDelegate {
       GetPartitionsRequest request = new GetPartitionsRequest()
           .withDatabaseName(databaseName)
           .withTableName(tableName)
-          .withExpression(expression)
           .withNextToken(nextToken)
           .withCatalogId(catalogId)
           .withSegment(segment);
@@ -1149,7 +1148,7 @@ public class GlueMetastoreClientDelegate {
         .withPartitionInput(partitionInput)
         .withPartitionValueList(part.getValues())
         .withCatalogId(catalogId);
-     
+
       try {
         glueClient.updatePartition(request);
       } catch (AmazonServiceException e) {
@@ -1664,11 +1663,11 @@ public class GlueMetastoreClientDelegate {
   public void setUGI(String username) throws TException {
     throw new UnsupportedOperationException("setUGI is unsupported");
   }
-  
+
   /**
    * Gets the user defined function in a database stored in metastore and
    * converts back to Hive function.
-   * 
+   *
    * @param dbName
    * @param functionName
    * @return
@@ -1695,7 +1694,7 @@ public class GlueMetastoreClientDelegate {
   /**
    * Gets user defined functions that match a pattern in database stored in
    * metastore and converts back to Hive function.
-   * 
+   *
    * @param dbName
    * @param functionName
    * @return
@@ -1730,7 +1729,7 @@ public class GlueMetastoreClientDelegate {
 
   /**
    * Creates a new user defined function in the metastore.
-   * 
+   *
    * @param function
    * @throws InvalidObjectException
    * @throws MetaException
@@ -1755,7 +1754,7 @@ public class GlueMetastoreClientDelegate {
 
   /**
    * Drops a user defined function in the database stored in metastore.
-   * 
+   *
    * @param dbName
    * @param functionName
    * @throws MetaException
@@ -1779,10 +1778,10 @@ public class GlueMetastoreClientDelegate {
       throw new MetaException(msg + e);
     }
   }
-  
+
   /**
    * Updates a user defined function in a database stored in the metastore.
-   * 
+   *
    * @param dbName
    * @param functionName
    * @param newFunction
@@ -1808,10 +1807,10 @@ public class GlueMetastoreClientDelegate {
       throw new MetaException(msg + e);
     }
   }
-  
+
   /**
    * Fetches the fields for a table in a database.
-   * 
+   *
    * @param db
    * @param tableName
    * @return
@@ -1836,10 +1835,10 @@ public class GlueMetastoreClientDelegate {
       throw new MetaException(msg + e);
     }
   }
-  
+
   /**
    * Fetches the schema for a table in a database.
-   * 
+   *
    * @param db
    * @param tableName
    * @return
@@ -1871,7 +1870,7 @@ public class GlueMetastoreClientDelegate {
 
   /**
    * Updates the partition values for a table in database stored in metastore.
-   * 
+   *
    * @param databaseName
    * @param tableName
    * @param partitionValues
