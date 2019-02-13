@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/aws-glue-datacatalog-client-common/aws-glue-datacatalog-client-common.iml" filepath="$PROJECT_DIR$/aws-glue-datacatalog-client-common/aws-glue-datacatalog-client-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aws-glue-datacatalog-hive-client.iml" filepath="$PROJECT_DIR$/aws-glue-datacatalog-hive-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aws-glue-datacatalog-hive2-client/aws-glue-datacatalog-hive2-client.iml" filepath="$PROJECT_DIR$/aws-glue-datacatalog-hive2-client/aws-glue-datacatalog-hive2-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aws-glue-datacatalog-spark-client/aws-glue-datacatalog-spark-client.iml" filepath="$PROJECT_DIR$/aws-glue-datacatalog-spark-client/aws-glue-datacatalog-spark-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shims/common/common.iml" filepath="$PROJECT_DIR$/shims/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shims/hive2-shims/hive2-shims.iml" filepath="$PROJECT_DIR$/shims/hive2-shims/hive2-shims.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shims/loader/loader.iml" filepath="$PROJECT_DIR$/shims/loader/loader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shims/shims.iml" filepath="$PROJECT_DIR$/shims/shims.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shims/spark-hive-shims/spark-hive-shims.iml" filepath="$PROJECT_DIR$/shims/spark-hive-shims/spark-hive-shims.iml" />
+    </modules>
+  </component>
+</project>

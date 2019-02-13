@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="aws-glue-datacatalog-client-common" />
+        <module name="aws-glue-datacatalog-hive2-client" />
+        <module name="aws-glue-datacatalog-spark-client" />
+        <module name="common" />
+        <module name="hive2-shims" />
+        <module name="loader" />
+        <module name="spark-hive-shims" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aws-glue-datacatalog-client-common" target="1.7" />
+      <module name="aws-glue-datacatalog-hive-client" target="1.5" />
+      <module name="aws-glue-datacatalog-hive2-client" target="1.7" />
+      <module name="aws-glue-datacatalog-spark-client" target="1.7" />
+      <module name="common" target="1.7" />
+      <module name="hive2-shims" target="1.7" />
+      <module name="loader" target="1.7" />
+      <module name="shims" target="1.5" />
+      <module name="spark-hive-shims" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
